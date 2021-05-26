@@ -1,0 +1,4 @@
+<launch>
+    <include file='$(find ar_track_alvar)/launch/rb1_artags_detect.launch' />
+    <include file='$(find simple_follower)/launch/nodes/tag_follower.launch' />      
+</launch>

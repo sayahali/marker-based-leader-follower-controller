@@ -1,0 +1,7 @@
+<launch>
+  <node name='follower' pkg="simple_follower" type="ar_tag_follower.py">
+    <param name='maxSpeed' value='0.5' type='double' />
+    <param name='targetDist' value='1.0' type='double' />
+    <rosparam ns='PID_controller' command='load' file='$(find simple_follower)/parameters/PID_param.yaml' />
+  </node>
+</launch>
